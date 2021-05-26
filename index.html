@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href= "style.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/544f91dd44.js" crossorigin="anonymous"></script>
+        <title>Site Ohmyfood</title>
+    </head>
+    <body>
+        <div id="blocpage">
+            <header class="logo header__logo">ohmyfood</header>
+            <section class="geolocation">
+                <div class="geolocation__box">
+                    <div class="geolocation__icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <form class="geolocation__form" method="POST" action="traitement.php">
+                        <input type="text" name="geolocation" value="Paris, Belleville" class="geolocation__form__input bold">
+                    </form> 
+                </div>
+            </section>
+            <section class="presentation">
+                <p class="presentation__p1 bold">Réservez le menu qui vous convient</p>
+                <p class="presentation__p2">Découvrez des restaurants d'exception, séléctionnés pas nos soins.</p>
+                <p class="presentation__p3">Explorer nos restaurants</p>
+            </section>
+            <section class="fonctionnement">
+                <p class="fonctionnement__heading bold">Fonctionnement</p>
+                <div class="fonctionnement__tabs">
+                    <p class= "fonctionnement__tabs__circles">1</p>
+                    <p class="fonctionnement__tabs__icons mobile"><i class="fas fa-mobile-alt"></i></p>
+                    <p class="fonctionnement__tabs__titles bold">Choissisez un restaurant</p>
+                </div>
+                <div class="fonctionnement__tabs">
+                    <p class= "fonctionnement__tabs__circles">2</p>
+                    <p class="fonctionnement__tabs__icons list"><i class="fas fa-list"></i></p>
+                    <p class="fonctionnement__tabs__titles bold">Composez votre menu</p>
+                </div>
+                <div class="fonctionnement__tabs">
+                    <p class= "fonctionnement__tabs__circles">3</p>
+                    <p class="fonctionnement__tabs__icons store"><i class="fas fa-store"></i></p>
+                    <p class="fonctionnement__tabs__titles bold">Dégustez au restaurant</p>
+                </div>
+            </section>
+            <section class="restaurants">
+                <div class="retaurants__heading bold">Restaurants</div>
+                <div class="retaurants__box">
+                    <div class="retaurants__box__imageblocks">
+                        <div class="imageblocks__photoblocks">
+                            <a href="MenuLaPaletteDuGout.html"><img src="restaurants/laPaletteDuGout.jpg" alt="Photo du restaurant La palette du goût"></a>
+                        </div>
+                        <div class="imageblocks__legend">
+                            <p class="bold">La palette du goût</p>
+                            Ménilmontant
+                            <div class ="imageblocks__legend__heart"><i class="far fa-heart"></i></div>
+                        </div>
+                        <div class="imageblocks__thumbnail__nouveau">Nouveau</div>
+                    </div>
+                    <div class="retaurants__box__imageblocks">
+                        <div class="imageblocks__photoblocks">
+                            <a href="MenuLaNoteEnchantee.html"><img src="restaurants/laNoteEnchantee.jpg" alt="Photo du restaurant La note enchantéé"></a>
+                        </div>
+                        <div class="imageblocks__legend">
+                            <p class="bold">La note enchantée</p>
+                            Charonne
+                            <div class ="imageblocks__legend__heart"><i class="far fa-heart"></i></div>
+                        </div>
+                        <div class="imageblocks__thumbnail__nouveau">Nouveau</div>
+                    </div>
+                    <div class="retaurants__box__imageblocks">
+                        <div class="imageblocks__photoblocks">
+                            <a href="MenuALaFrancaise.html"><img src="restaurants/laFrancaise.jpg" alt="Photo du restaurant À la française"></a>
+                        </div>
+                        <div class="imageblocks__legend">
+                            <p class="bold">À la française</p>
+                            Cité Rouge
+                            <div class ="imageblocks__legend__heart"><i class="far fa-heart"></i></div>
+                        </div>
+                    </div>
+                    <div class="retaurants__box__imageblocks">
+                        <div class="imageblocks__photoblocks">
+                            <a href="MenuLaDeliceDesSens.html"><img src="restaurants/leDeliceDesSens.jpg" alt="Photo du restaurant Le délice des sens"></a>
+                        </div>
+                        <div class="imageblocks__legend">
+                            <p class="bold">Le délice des sens</p>
+                            Folie-Méricourt
+                            <div class ="imageblocks__legend__heart"><i class="far fa-heart"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="logo footer__logo">ohmyfood</div>
+                <div class="footer__links">
+                    <p>
+                        <i class="fas fa-utensils"></i> <a href="proposerUnRestaurant.html" class="footer__links__proposition">Proposer un restaurant</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-hands-helping"></i> <a href="devenirPartenaire.html" class="footer__links__partner">Devenir partenaire</a>
+                    </p>
+                    <p><a href="mentionsLegales.html">Mentions légales</a></p>
+                    <p><a href="mailto:annebracdelaperriere@gmail.com">contact</a></p>
+                </div>
+            </footer>
+        </div>
+    </body>   
+ </html>     
