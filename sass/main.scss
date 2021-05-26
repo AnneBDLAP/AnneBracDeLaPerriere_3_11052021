@@ -1,0 +1,239 @@
+*
+{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.logo, h1, h2
+{
+    font-family: 'Shrikhand', cursive, Arial, Helvetica, sans-serif;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+body
+{
+    margin: 0%;
+    margin-top: 23px;
+    #blocpage {
+    width: 375px;
+    }
+}
+
+.header__logo
+{
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.geolocation
+{
+    height: 50px;
+    background-color: #eaeaea;
+    padding-left: 100px;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        width: 155px;  
+    }
+    &__form__input {    
+        border: none;
+        background-color: #eaeaea;
+        font-size: 1.1em;
+        width: 125px;
+    }
+}
+
+.presentation
+{
+    height: 288px;
+    background-color: #f6f6f6;
+    &__p1, &__p2,  &__p3 {
+        margin:0%;
+        text-align: center;
+    }
+    &__p1 {
+        padding-top: 44px;
+        padding-bottom: 23px;
+        margin-left: 65px;
+        margin-right: 79px;
+        font-size: 1.3em;
+    }
+    &__p2 {
+        padding-top: 0px;
+        padding-bottom: 30px;
+        margin-left: 40px;
+        margin-right: 30px;
+        font-size: 1.1em;
+    }
+    &__p3 {
+        width: 217px;
+        height: 50px;
+        padding-top: 0px;
+        margin-left: 80px;
+        margin-right: 75px;
+        background-color: #9356DC;
+        color: white;
+        font-size: 1em;
+        line-height: 50px;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 2px 2px 8px grey;
+    }
+}
+
+.fonctionnement
+{
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    &__heading {
+        padding-top: 53px;
+        padding-left: 20px;
+        height: 50px;
+        font-size: 1.3em;
+    }
+    &__tabs {
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: 25px;
+        height: 75px;
+        width: 325px;
+        margin-left: 33px;
+        margin-right: 20px;
+        border-radius: 25px;
+        box-shadow: 2px 2px 8px grey;
+        background-color: #f6f6f6;
+        align-items: center;
+    }
+    &__tabs__circles {
+        background-color: #9356DC;
+        height: 25px;
+        width: 25px;
+        border-radius: 12.5px;
+        text-align: center;
+        line-height: 25px;
+        position: absolute;
+        left: 20px;
+    }
+    &__tabs__icons {
+        padding-left: 35px;
+        font-size: 1.2em;
+    }
+    .mobile, .list {
+        color: grey;
+    }
+
+    .store {
+        color: #9356DC;
+    }
+    &__tabs__titles {
+        padding-left: 25px;
+    }
+}
+
+.restaurants
+{
+    height: 1225px;
+    background-color: #f6f6f6;
+    &__heading {
+        padding-top: 60px;
+        font-size: 1.3em;
+        padding-left: 20px;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1060px;
+        padding-top: 30px;
+        padding-left: 20px;
+        &__imageblocks {
+            height: 252px;
+            width: 333px;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 2px 2px 8px grey;
+        }
+    }
+}
+    
+.imageblocks{
+    &__photoblocks{
+        height: 175px;
+        overflow: hidden;
+        border-radius: 20px 20px 0px 0px;
+        & img {
+            width: 100%; 
+        }
+    }
+    &__legend {
+        padding-top: 20px;
+        padding-left: 15px;
+        & p {
+            margin: 0%;
+            padding-bottom: 6px;
+        }
+        &__heart {
+            font-size: 1.4em;
+            position: relative;
+            left: 85%;
+            bottom: 40px;
+        }
+    }
+    &__thumbnail__nouveau {
+        color: #008766;
+        background-color: #99e2d0;
+        width: 80px;
+        height: 30px;
+        position:relative;
+        bottom: 250px;
+        left: 70%;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 2px;
+    } 
+}
+
+.footerAll
+{
+    height: 200px;
+    color: white;
+    background-color: #353535;
+    &__logo {
+        height: 40px;
+        padding-top: 20px;
+        padding-left: 25px;
+        font-size: 1.2em;
+    }
+    &__links {
+        height: 120px;
+        padding-top: 5px;
+        padding-left: 25px;
+        & p {
+            line-height: 27px;
+            margin: 0%;
+        }
+        & a {
+            text-decoration: none;
+            color: white;
+        }
+        &__proposition
+        {
+            padding-left: 10px;
+        }
+        &__partner
+        {
+            padding-left: 4px;
+        }
+    }
+}
+
+
+
+
