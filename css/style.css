@@ -2,26 +2,28 @@
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-.logo, h1, h2 {
-  font-family: "Shrikhand", cursive, Arial, Helvetica, sans-serif;
-}
-
 .bold {
   font-weight: bold;
 }
 
+p {
+  margin: 0%;
+}
+
 body {
   margin: 0%;
-  margin-top: 23px;
 }
 body #blocpage {
   width: 375px;
 }
 
 .header__logo {
-  height: 40px;
-  margin-bottom: 10px;
+  font-family: "Shrikhand", cursive, Arial, Helvetica, sans-serif;
   font-size: 2em;
+  height: 30px;
+  line-height: 30px;
+  padding-top: 23px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -68,16 +70,13 @@ body #blocpage {
 .presentation__p3 {
   width: 217px;
   height: 50px;
-  padding-top: 0px;
   margin-left: 80px;
-  margin-right: 75px;
-  background-color: #9356DC;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
   font-size: 1em;
-  line-height: 50px;
-  border: none;
   border-radius: 25px;
   box-shadow: 2px 2px 8px grey;
+  border: none;
 }
 
 .fonctionnement {
@@ -103,6 +102,9 @@ body #blocpage {
   box-shadow: 2px 2px 8px grey;
   background-color: #f6f6f6;
   align-items: center;
+}
+.fonctionnement__tabs--color-secondary_lighten {
+  background-color: #efe6fa;
 }
 .fonctionnement__tabs__circles {
   background-color: #9356DC;
@@ -166,18 +168,18 @@ body #blocpage {
   padding-left: 15px;
 }
 .imageblocks__legend p {
-  margin: 0%;
   padding-bottom: 6px;
 }
 .imageblocks__legend__heart {
-  font-size: 1.4em;
+  font-size: 25px;
   position: relative;
+  max-width: 25px;
   left: 85%;
   bottom: 40px;
 }
 .imageblocks__thumbnail__nouveau {
-  color: #008766;
-  background-color: #99e2d0;
+  color: #217460;
+  background-color: #99E2D0;
   width: 80px;
   height: 30px;
   position: relative;
@@ -197,6 +199,7 @@ body #blocpage {
   height: 40px;
   padding-top: 20px;
   padding-left: 25px;
+  font-family: "Shrikhand", cursive, Arial, Helvetica, sans-serif;
   font-size: 1.2em;
 }
 .footerAll__links {
@@ -206,7 +209,6 @@ body #blocpage {
 }
 .footerAll__links p {
   line-height: 27px;
-  margin: 0%;
 }
 .footerAll__links a {
   text-decoration: none;
@@ -217,6 +219,111 @@ body #blocpage {
 }
 .footerAll__links__partner {
   padding-left: 4px;
+}
+
+/*menus*/
+.index-link {
+  font-size: 0.7em;
+  color: black;
+  position: relative;
+  right: 65%;
+}
+
+.photo {
+  height: 255px;
+  overflow: hidden;
+}
+.photo__lpdg {
+  width: 110%;
+}
+.photo__lne {
+  width: 100%;
+  position: relative;
+  bottom: 40%;
+}
+.photo__alf {
+  width: 100%;
+  position: relative;
+  top: 10%;
+}
+.photo__ldds {
+  width: 100%;
+}
+
+.menu {
+  height: 1160px;
+  background-color: #f6f6f6;
+  border-radius: 35px 35px 0px 0px;
+  position: relative;
+  margin-top: -35px;
+}
+.menu--extend {
+  height: 1250px;
+}
+.menu__heading {
+  font-family: "Shrikhand", cursive, Arial, Helvetica, sans-serif;
+  font-size: 1.8em;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+.menu__heading__heart {
+  font-size: 25px;
+  position: relative;
+  max-width: 25px;
+  left: 7%;
+}
+.menu__block__section {
+  height: 270px;
+  padding-top: 36px;
+}
+.menu__block__section__heading {
+  margin-left: 20px;
+  font-size: 1.1em;
+  border-bottom: 2px solid #99E2D0;
+  width: 40px;
+}
+.menu__block__section__tabs {
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 345px;
+  height: 70px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px grey;
+}
+.menu__block__section__tabs__heading {
+  padding-top: 11px;
+  padding-left: 13px;
+  font-size: 1.1em;
+}
+.menu__block__section__tabs__description {
+  padding-top: 6px;
+  padding-left: 11px;
+  max-width: 285px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__block__section__tabs__price {
+  position: relative;
+  left: 88%;
+  bottom: 25%;
+  max-width: 25px;
+}
+.menu__block__section--extend {
+  height: 360px;
+}
+.menu__order-button {
+  width: 217px;
+  height: 50px;
+  margin-left: 80px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  font-size: 1em;
+  border-radius: 25px;
+  box-shadow: 2px 2px 8px grey;
+  border: none;
+  margin-top: 55px;
 }
 
 /*# sourceMappingURL=style.css.map */
