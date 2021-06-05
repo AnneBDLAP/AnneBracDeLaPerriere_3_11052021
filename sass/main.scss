@@ -88,14 +88,15 @@ $linear-gradient: linear-gradient(to bottom right,  $color-secondary, $color-pri
     }
 }
 
-/*@keyframes loading-circles {
+@keyframes loading-circles {
     0% {
-        transform: translate(-5000%, -5000%);
+        display : none;
+        visibility : hidden;
     }
     100% {
-        transform: translate(-5000%, -5000%);
+       display : block;
     }
-}*/
+}
 
 @keyframes loading-menu {
     0% {
@@ -130,7 +131,8 @@ body {
 }
 
 .index-before {
-    height: 100vh;
+    height: 5000px;
+    z-index: 9999;
     background-color: white;
     position: absolute;
     right: 0%;
