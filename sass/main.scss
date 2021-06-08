@@ -75,7 +75,7 @@ $linear-gradient: linear-gradient(to bottom right,  $color-secondary, $color-pri
 @keyframes loading-translate {
     100% {
         display: none;
-        visibility:hidden;
+        visibility:hidden;  
     }
 }
 
@@ -85,16 +85,6 @@ $linear-gradient: linear-gradient(to bottom right,  $color-secondary, $color-pri
     }
     100% {
         transform: scaleX(1);
-    }
-}
-
-@keyframes loading-circles {
-    0% {
-        display : none;
-        visibility : hidden;
-    }
-    100% {
-       display : block;
     }
 }
 
@@ -131,15 +121,16 @@ body {
 }
 
 .index-before {
-    height: 5000px;
-    z-index: 9999;
-    background-color: white;
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    top: 0%;
-    animation: loading-translate 3s;
-    animation-fill-mode: forwards;
+  min-height: 200%;
+  overflow: hidden;
+  z-index : 9999;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  top: 0%;
+  animation: loading-translate 3s;
+  animation-fill-mode: forwards;
     &__loading {
         height: 20px;
         padding: 5px;
@@ -153,6 +144,7 @@ body {
             background: $linear-gradient;
             border-radius: 25px;
             animation: loading-spinner 3s 500ms cubic-bezier(.26,.86,.6,.99);
+            animation-fill-mode: backwards;
             transform-origin: 0% 50%;
         }
     }
@@ -171,8 +163,7 @@ header {
     margin-right: auto;
 }
 
-.geolocation
-{
+.geolocation {
     height: 50px;
     background-color: #eaeaea;
     display: flex;
@@ -192,8 +183,7 @@ header {
     }
 }
 
-.presentation
-{
+.presentation {
     height: 288px;
     background-color: $grey-background;
     display: flex;
@@ -225,8 +215,7 @@ header {
     }
 }
 
-.fonctionnement
-{
+.fonctionnement {
     height: 440px;
     max-width: 375px;
     margin-left: auto;
@@ -300,7 +289,6 @@ header {
         line-height: 25px;
         position: relative;
         right: 12px;
-        animation: loading-circles 3s;
     }
     &__tabs__icons {
         padding-left: 35px;
@@ -318,8 +306,7 @@ header {
     }
 }
 
-.restaurants
-{
+.restaurants {
     height: 1225px;
     background-color: $grey-background;
     @include tablet-only {
@@ -353,11 +340,12 @@ header {
             border-radius: 20px;
             background-color: white;
             box-shadow: $box-shadow;
+            position: relative;
         }
     }
 }
 
-.imageblocks{
+.imageblocks {
     &__photoblocks{
         height: 175px;
         overflow: hidden;
@@ -373,9 +361,11 @@ header {
             padding-bottom: 6px;
         }
         &__hearts {
-            position: relative;
-            left: 270px;
-            bottom: 40px;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            left: 87%;
+            bottom: 10%;
             .far-index {
                 @include heart-style;
                 position: absolute;
@@ -393,7 +383,7 @@ header {
         width: 80px;
         height: 30px;
         position:relative;
-        bottom: 250px;
+        bottom: 220px;
         left: 70%;
         line-height: 30px;
         text-align: center;
@@ -401,8 +391,7 @@ header {
     } 
 }
 
-.footerAll
-{
+.footerAll {
     height: 200px;
     color: white;
     background-color: #353535;
