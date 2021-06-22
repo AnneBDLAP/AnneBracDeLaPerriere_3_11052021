@@ -51,7 +51,7 @@ body #blocpage {
   overflow: hidden;
   z-index: 9999;
   background-color: white;
-  position: absolute;
+  position: fixed;
   right: 0%;
   left: 0%;
   top: 0%;
@@ -230,6 +230,7 @@ header {
 }
 .fonctionnement__tabs__circles {
   background-color: #9356DC;
+  color: white;
   height: 25px;
   width: 25px;
   border-radius: 12.5px;
